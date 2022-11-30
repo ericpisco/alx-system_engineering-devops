@@ -1,2 +1,2 @@
 #!/bin/bash
-$ file -m h_school.mgc *
+$ file -m my-magic test.23 
