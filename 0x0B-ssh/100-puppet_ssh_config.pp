@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
 # Puppet script to create ssh config file
 
-file { 'ect/ssh/ssh_cofig':
-ensure => present,
+file { 'etc/ssh/ssh_config':
+	ensure => present,
 
-content =>"
+	content =>"
 
-#ssh client configuration
-host*
-IdentityFile ~/.ssh/school
-PasswordAuthentication no
-",
+	#SSH client configuration
+	host*
+	IdentityFile ~/.ssh/school
+	PasswordAuthentication no
+	",
 
 }
